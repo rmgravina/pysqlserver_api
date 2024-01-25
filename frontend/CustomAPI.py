@@ -8,7 +8,7 @@ def custom_api():
     "info": {
         "title": "⚡ API Banco de Dados",
         "x-logo": {
-                "url": "https://i.ibb.co/0n3z3Cf/api-logo.jpg",
+                "url": "https://raw.githubusercontent.com/rmgravina/api_database/main/frontend/misc/api_logo.jpg",
                 },
         "description": "Funcionalidades para manipulação de banco de dados.",
         "contact": {
