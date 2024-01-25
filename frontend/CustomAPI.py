@@ -71,7 +71,7 @@ def custom_api():
         "/insert_into_table_from_dict/": {
             "post": {
                 "summary": "Inserir dados 📝",
-                "description": "Insere dados em uma tabela.\n\n- **nome_da_tabela**: Nome da tabela a ser criada.\n<br>\n<br>\n- **valores***: Dicionário contendo os valores a serem inseridos na tabela.\n <br> - _Exemplo_:\n            {\n                \"nome\": \"Cade\",\n                \"email\": \"cade@cade.gov.br\"\n                }\n<br>\n<br>\n*Se a tabela possuir o campo 'id', ele não precisa ser fornecido, pois é a chave primária da tabela e será autoincrementado.",
+                "description": "Insere dados em uma tabela.\n\n- **nome_da_tabela**: Nome da tabela a ser criada.\n<br>\n<br>\n- **valores***: Dicionário contendo os valores a serem inseridos na tabela.\n <br> - _Exemplo_:\n            {\n                \"nome\": \"username\",\n                \"email\": \"user@domain.com.br\"\n                }\n<br>\n<br>\n*Se a tabela possuir o campo 'id', ele não precisa ser fornecido, pois é a chave primária da tabela e será autoincrementado.",
                 "operationId": "insert_into_table_insert_into_table_from_dict__post",
                 "requestBody": {
                     "content": {
@@ -108,11 +108,11 @@ def custom_api():
                 "x-codeSamples": [
             {
                 "lang": "Python 🐍",
-                "source": "import requests\n\nurl = 'https://example.com/insert_into_table_from_dict/'\nbody = {\n    'nome_da_tabela': 'example_table',\n    'valores': {\n        'nome': 'Cade',\n        'email': 'cade@cade.gov.br'\n    }\n}\nheaders = {'Content-Type': 'application/json'}\nresponse = requests.post(url, json=body, headers=headers)\nprint(response.json())"
+                "source": "import requests\n\nurl = 'https://example.com/insert_into_table_from_dict/'\nbody = {\n    'nome_da_tabela': 'example_table',\n    'valores': {\n        'nome': 'username',\n        'email': 'user@domain.com.br'\n    }\n}\nheaders = {'Content-Type': 'application/json'}\nresponse = requests.post(url, json=body, headers=headers)\nprint(response.json())"
             },
             {
                 "lang": "JavaScript 🟨",
-                "source": "const url = 'https://example.com/insert_into_table_from_dict/';\nconst body = {\n    nome_da_tabela: 'example_table',\n    valores: {\n        nome: 'Cade',\n        email: 'cade@cade.gov.br'\n    }\n};\nconst headers = { 'Content-Type': 'application/json' };\n\nfetch(url, {\n    method: 'POST',\n    headers: headers,\n    body: JSON.stringify(body)\n})\n    .then(response => response.json())\n    .then(data => console.log(data));"
+                "source": "const url = 'https://example.com/insert_into_table_from_dict/';\nconst body = {\n    nome_da_tabela: 'example_table',\n    valores: {\n        nome: 'username',\n        email: 'user@domain.com.br'\n    }\n};\nconst headers = { 'Content-Type': 'application/json' };\n\nfetch(url, {\n    method: 'POST',\n    headers: headers,\n    body: JSON.stringify(body)\n})\n    .then(response => response.json())\n    .then(data => console.log(data));"
             }
             ]
         }
@@ -120,7 +120,7 @@ def custom_api():
         "/select_from_table/": {
             "post": {
                 "summary": "Selecionar dados 🔍",
-                "description": "Seleciona dados de uma tabela.\n\n- **nome_da_tabela**: Nome da tabela a ser solicitado os dados.\n<br>\n<br>\n- **colunas**: Lista contendo os nomes das colunas a serem selecionadas.\n <br> - _Exemplo_:\n            [\n                \"nome\",\n                \"email\"\n            ]\n<br>\n<br>\n- **where**: String contendo a condição de seleção dos dados.\n <br> - _Exemplo_:\n            \"nome = 'Cade'\"",
+                "description": "Seleciona dados de uma tabela.\n\n- **nome_da_tabela**: Nome da tabela a ser solicitado os dados.\n<br>\n<br>\n- **colunas**: Lista contendo os nomes das colunas a serem selecionadas.\n <br> - _Exemplo_:\n            [\n                \"nome\",\n                \"email\"\n            ]\n<br>\n<br>\n- **where**: String contendo a condição de seleção dos dados.\n <br> - _Exemplo_:\n            \"nome = 'username'\"",
                 "operationId": "select_from_table_select_from_table__post",
                 "requestBody": {
                     "content": {
@@ -157,11 +157,11 @@ def custom_api():
                 "x-codeSamples": [
             {
                 "lang": "Python 🐍",
-                "source": "import requests\n\nurl = 'https://example.com/select_from_table/'\nbody = {\n    'nome_da_tabela': 'example_table',\n    'colunas': ['nome', 'email'],\n    'where': \"nome = 'Cade'\"\n}\nheaders = {'Content-Type': 'application/json'}\nresponse = requests.post(url, json=body, headers=headers)\nprint(response.json())"
+                "source": "import requests\n\nurl = 'https://example.com/select_from_table/'\nbody = {\n    'nome_da_tabela': 'example_table',\n    'colunas': ['nome', 'email'],\n    'where': \"nome = 'username'\"\n}\nheaders = {'Content-Type': 'application/json'}\nresponse = requests.post(url, json=body, headers=headers)\nprint(response.json())"
             },
             {
                 "lang": "JavaScript 🟨",
-                "source": "const url = 'https://example.com/select_from_table/';\nconst body = {\n    nome_da_tabela: 'example_table',\n    colunas: ['nome', 'email'],\n    where: \"nome = 'Cade'\"\n};\nconst headers = { 'Content-Type': 'application/json' };\n\nfetch(url, {\n    method: 'POST',\n    headers: headers,\n    body: JSON.stringify(body)\n})\n    .then(response => response.json())\n    .then(data => console.log(data));"
+                "source": "const url = 'https://example.com/select_from_table/';\nconst body = {\n    nome_da_tabela: 'example_table',\n    colunas: ['nome', 'email'],\n    where: \"nome = 'username'\"\n};\nconst headers = { 'Content-Type': 'application/json' };\n\nfetch(url, {\n    method: 'POST',\n    headers: headers,\n    body: JSON.stringify(body)\n})\n    .then(response => response.json())\n    .then(data => console.log(data));"
             }
             ],
         }
@@ -169,7 +169,7 @@ def custom_api():
         "/update_table_from_dict/": {
             "post": {
                 "summary": "Atualizar dados 🔁",
-                "description": "Atualiza dados de uma tabela.\n\n- **nome_da_tabela**: Nome da tabela a ser atualizada.\n<br>\n<br>\n- **valores**: Dicionário contendo os valores a serem atualizados na tabela.\n <br> - _Exemplo_:\n            {\n                \"nome\": \"Cade\",\n                \"email\": \"cade@cade.gov.br\"\n                }\n<br>\n<br>\n- **where**: String contendo a condição de atualização dos dados.\n <br> - _Exemplo_:\n            \"nome = 'Cade'\"",
+                "description": "Atualiza dados de uma tabela.\n\n- **nome_da_tabela**: Nome da tabela a ser atualizada.\n<br>\n<br>\n- **valores**: Dicionário contendo os valores a serem atualizados na tabela.\n <br> - _Exemplo_:\n            {\n                \"nome\": \"username\",\n                \"email\": \"user@domain.com.br\"\n                }\n<br>\n<br>\n- **where**: String contendo a condição de atualização dos dados.\n <br> - _Exemplo_:\n            \"nome = 'username'\"",
                 "operationId": "update_table_update_table_from_dict__post",
                 "requestBody": {
                     "content": {
@@ -206,11 +206,11 @@ def custom_api():
                 "x-codeSamples": [
             {
                 "lang": "Python 🐍",
-                "source": "import requests\n\nurl = 'https://example.com/update_table_from_dict/'\nbody = {\n    'nome_da_tabela': 'example_table',\n    'valores': {\n        'nome': 'Cade',\n        'email': 'cade@cade.gov.br'\n    },\n    'where': \"nome = 'Cade'\"\n}\nheaders = {'Content-Type': 'application/json'}\nresponse = requests.post(url, json=body, headers=headers)\nprint(response.json())"
+                "source": "import requests\n\nurl = 'https://example.com/update_table_from_dict/'\nbody = {\n    'nome_da_tabela': 'example_table',\n    'valores': {\n        'nome': 'username',\n        'email': 'user@domain.com.br'\n    },\n    'where': \"nome = 'username'\"\n}\nheaders = {'Content-Type': 'application/json'}\nresponse = requests.post(url, json=body, headers=headers)\nprint(response.json())"
             },
             {
                 "lang": "JavaScript 🟨",
-                "source": "const url = 'https://example.com/update_table_from_dict/';\nconst body = {\n    nome_da_tabela: 'example_table',\n    valores: {\n        nome: 'Cade',\n        email: 'cade@cade.gov.br'\n    },\n    where: \"nome = 'Cade'\"\n};\nconst headers = { 'Content-Type': 'application/json' };\n\nfetch(url, {\n    method: 'POST',\n    headers: headers,\n    body: JSON.stringify(body)\n})\n    .then(response => response.json())\n    .then(data => console.log(data));"
+                "source": "const url = 'https://example.com/update_table_from_dict/';\nconst body = {\n    nome_da_tabela: 'example_table',\n    valores: {\n        nome: 'username',\n        email: 'user@domain.com.br'\n    },\n    where: \"nome = 'username'\"\n};\nconst headers = { 'Content-Type': 'application/json' };\n\nfetch(url, {\n    method: 'POST',\n    headers: headers,\n    body: JSON.stringify(body)\n})\n    .then(response => response.json())\n    .then(data => console.log(data));"
             }
             ],
         }
@@ -218,7 +218,7 @@ def custom_api():
         "/delete_from_table/": {
             "post": {
                 "summary": "Excluir dados 🔥",
-                "description": "Deleta dados de uma tabela.\n\n- **nome_da_tabela**: Nome da tabela a ser deletada.\n<br>\n<br>\n- **where**: String contendo a condição de deleção dos dados.\n <br> - _Exemplo_:\n            \"nome = 'Cade'\"",
+                "description": "Deleta dados de uma tabela.\n\n- **nome_da_tabela**: Nome da tabela a ser deletada.\n<br>\n<br>\n- **where**: String contendo a condição de deleção dos dados.\n <br> - _Exemplo_:\n            \"nome = 'username'\"",
                 "operationId": "delete_from_table_delete_from_table__post",
                 "requestBody": {
                     "content": {
@@ -255,11 +255,11 @@ def custom_api():
                 "x-codeSamples": [
             {
                 "lang": "Python 🐍",
-                "source": "import requests\n\nurl = 'https://example.com/delete_from_table/'\nbody = {\n    'nome_da_tabela': 'example_table',\n    'where': \"nome = 'Cade'\"\n}\nheaders = {'Content-Type': 'application/json'}\nresponse = requests.post(url, json=body, headers=headers)\nprint(response.json())"
+                "source": "import requests\n\nurl = 'https://example.com/delete_from_table/'\nbody = {\n    'nome_da_tabela': 'example_table',\n    'where': \"nome = 'username'\"\n}\nheaders = {'Content-Type': 'application/json'}\nresponse = requests.post(url, json=body, headers=headers)\nprint(response.json())"
             },
             {
                 "lang": "JavaScript 🟨",
-                "source": "const url = 'https://example.com/delete_from_table/';\nconst body = {\n    nome_da_tabela: 'example_table',\n    where: \"nome = 'Cade'\"\n};\nconst headers = { 'Content-Type': 'application/json' };\n\nfetch(url, {\n    method: 'POST',\n    headers: headers,\n    body: JSON.stringify(body)\n})\n    .then(response => response.json())\n    .then(data => console.log(data));"
+                "source": "const url = 'https://example.com/delete_from_table/';\nconst body = {\n    nome_da_tabela: 'example_table',\n    where: \"nome = 'username'\"\n};\nconst headers = { 'Content-Type': 'application/json' };\n\nfetch(url, {\n    method: 'POST',\n    headers: headers,\n    body: JSON.stringify(body)\n})\n    .then(response => response.json())\n    .then(data => console.log(data));"
             }
             ],
         }
