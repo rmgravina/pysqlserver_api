@@ -1,8 +1,8 @@
-# ⚡ API Banco de Dados
+# ⚡ PySQL Server API
 
 ## 📝 Descrição
 
-A API Banco de Dados é uma API desenvolvida em Python utilizando as bibliotecas FastAPI e Uvicorn. Ela oferece funcionalidades para manipulação de bancos de dados, permitindo que os usuários criem tabelas, insiram, selecionem, atualizem e excluam dados nas tabelas.
+A PySQL Server API é uma ferramenta para implementar API de operações CRUD em banco de dados SQL Server. Foi desenvolvida em Python utilizando as bibliotecas pyodbc, FastAPI e Uvicorn. Ela oferece funcionalidades para manipulação de bancos de dados, permitindo que os usuários criem tabelas, insiram, selecionem, atualizem e excluam dados nas tabelas.
 
 ## 🔍 Documentação da API
 
