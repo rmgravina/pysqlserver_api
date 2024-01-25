@@ -58,8 +58,8 @@ Renomeie o arquivo `EXAMPLE.cfg` para `.cfg` e preencha os campos com as informa
     - Exemplo:
       ```json
       {
-        "nome": "Cade",
-        "email": "cade@cade.gov.br"
+        "nome": "username",
+        "email": "username@domain.com.br"
       }
       ```
       Se a tabela possuir o campo 'id', ele não precisa ser fornecido, pois é a chave primária da tabela e será autoincrementado.
@@ -71,8 +71,8 @@ Renomeie o arquivo `EXAMPLE.cfg` para `.cfg` e preencha os campos com as informa
   body = {
       'nome_da_tabela': 'example_table',
       'valores': {
-          'nome': 'Cade',
-          'email': 'cade@cade.gov.br'
+          'nome': 'username',
+          'email': 'username@domain.com.br'
       }
   }
   headers = {'Content-Type': 'application/json'}
@@ -97,7 +97,7 @@ Renomeie o arquivo `EXAMPLE.cfg` para `.cfg` e preencha os campos com as informa
       ```
   - **where**: String contendo a condição de seleção dos dados.
     - Exemplo:
-      `"nome = 'Cade'"`
+      `"nome = 'username'"`
 - Exemplo de Requisição (Python):
   ```python
   import requests
@@ -106,7 +106,7 @@ Renomeie o arquivo `EXAMPLE.cfg` para `.cfg` e preencha os campos com as informa
   body = {
       'nome_da_tabela': 'example_table',
       'colunas': ['nome', 'email'],
-      'where': "nome = 'Cade'"
+      'where': "nome = 'username'"
   }
   headers = {'Content-Type': 'application/json'}
   response = requests.post(url, json=body, headers=headers)
@@ -124,13 +124,13 @@ Renomeie o arquivo `EXAMPLE.cfg` para `.cfg` e preencha os campos com as informa
     - Exemplo:
       ```json
       {
-        "nome": "Cade",
-        "email": "cade@cade.gov.br"
+        "nome": "username",
+        "email": "username@domain.com.br"
       }
       ```
   - **where**: String contendo a condição de atualização dos dados.
     - Exemplo:
-      `"nome = 'Cade'"`
+      `"nome = 'username'"`
 - Exemplo de Requisição (Python):
   ```python
   import requests
@@ -139,10 +139,10 @@ Renomeie o arquivo `EXAMPLE.cfg` para `.cfg` e preencha os campos com as informa
   body = {
       'nome_da_tabela': 'example_table',
       'valores': {
-          'nome': 'Cade',
-          'email': 'cade@cade.gov.br'
+          'nome': 'username',
+          'email': 'username@domain.com.br'
       },
-      'where': "nome = 'Cade'"
+      'where': "nome = 'username'"
   }
   headers = {'Content-Type': 'application/json'}
   response = requests.post(url, json=body, headers=headers)
@@ -158,7 +158,7 @@ Renomeie o arquivo `EXAMPLE.cfg` para `.cfg` e preencha os campos com as informa
   - **nome_da_tabela**: Nome da tabela em que os dados serão deletados.
   - **where**: String contendo a condição de deleção dos dados.
     - Exemplo:
-      `"nome = 'Cade'"`
+      `"nome = 'username'"`
 - Exemplo de Requisição (Python):
   ```python
   import requests
@@ -166,7 +166,7 @@ Renomeie o arquivo `EXAMPLE.cfg` para `.cfg` e preencha os campos com as informa
   url = 'https://example.com/delete_from_table/'
   body = {
       'nome_da_tabela': 'example_table',
-      'where': "nome = 'Cade'"
+      'where': "nome = 'username'"
   }
   headers = {'Content-Type': 'application/json'}
   response = requests.post(url, json=body, headers=headers)
