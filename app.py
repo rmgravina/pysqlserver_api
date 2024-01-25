@@ -14,21 +14,7 @@ from models.schemas import CreateTableRequest, CreateTableResponse, InsertIntoTa
 db_service = db.Database()
 db_service.connect_db()
 
-'''
-# Criação do app FastAPI
-app = FastAPI(title = "⚡ API Banco de Dados",
-              description = "Funcionalidades para manipulação de banco de dados.",
-              contact = 
-              {
-                  "name": "Rogério Gravina",
-                  "url": "https:https://gitlab.cade.gov.br/rogerio.gravina/",
-                  "email": "rogerio.gravina@cade.gov.br"
-                  },
-                version = "1.0.0",
-                redoc_url="/intro", 
-              )
 
-'''
 app = FastAPI(redoc_url= "/intro")
 
 custom_api_dict = custom_api.custom_api()
