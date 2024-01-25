@@ -2,3 +2,7 @@
 notebooks/
 venv/
 __pycache__/
+frontend/__pycache__/
+services/__pycache__/
+notebooks/__pycache__/
+models/__pycache__/
