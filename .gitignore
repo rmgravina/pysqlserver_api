@@ -1,2 +1,4 @@
+.cfg
 notebooks/
 venv/
+__pycache__/
