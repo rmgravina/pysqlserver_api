@@ -1,5 +1,23 @@
 # ⚡ PySQL Server API
 
+<p align="center">
+  <img src="frontend\misc\api_logo.jpg" alt="Descrição da imagem">
+</p>
+
+- [Descrição](#-descrição)
+- [Documentação da API](#-documentação-da-api)
+   - [Configurar Banco de Dados](#configurar-banco-de-dados)
+   - [Criar Tabela](#criar-tabela)
+   - [Inserir Dados](#inserir-dados)
+   - [Selecionar Dados](#selecionar-dados)
+   - [Atualizar Dados](#atualizar-dados)
+   - [Excluir Dados](#excluir-dados)
+   - [Listar Tabelas](#listar-tabelas)
+- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Autor](#-autor)
+- [Licença](#-licença)
+
+
 ## 📝 Descrição
 
 A PySQL Server API é uma ferramenta para implementar API de operações CRUD em banco de dados SQL Server. Foi desenvolvida em Python utilizando as bibliotecas pyodbc, FastAPI e Uvicorn. Ela oferece funcionalidades para manipulação de bancos de dados, permitindo que os usuários criem tabelas, insiram, selecionem, atualizem e excluam dados nas tabelas.
