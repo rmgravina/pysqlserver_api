@@ -24,7 +24,13 @@ A PySQL Server API é uma ferramenta para implementar API de operações CRUD em
 
 ## 🔍 Documentação da API
 
-A documentação completa da API pode ser encontrada na rota `/intro` do Swagger. Aqui estão os principais endpoints disponíveis:
+A documentação completa da API pode ser encontrada na rota `/intro` do Swagger.
+
+
+![Interface](/frontend/misc/image.png)
+
+<br>
+ Aqui estão os principais endpoints disponíveis:
 
 ### Configurar Banco de Dados
 
